@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock-Paper-Scissor</title>
 </head>
 <body>
+
     
+    <main id="play-main">
+        <audio id="instant-win" src="sound/win.wav"></audio>
+        <audio id="instant-loss" src="sound/loose2.mp3"></audio>
+        <audio id="draw" src="sound/draw.mp3"></audio>
+        <audio id="win-audio" src="sound/final-win.mp3"></audio>
+        <audio id="loose-audio" src="sound/final-loose.mp3" ></audio>
+
+        <div id="play-field">
+            <div id="score-count-container">
+                <div class="computerScore">
+                    <p class="score-label">Computer Score : <span id="computer-score">0</span></p>
+                </div>
+                <div class="playerScore">
+                    <p class="score-label">Player Score : <span id="player-score">0</span></p>
+                </div>
+            </div>
+            <div id="result-container">
+                <div id="result-wrapper">
+                    <p id="result">Play Now</p>
+                </div>
+                <div class="grid-col" id="computer-section">
+                    Computer's Choice
+                    <div class="choice-img" id="computer-choice">
+                    </div>
+                </div>
+                <div class="grid-col" id="player-section">
+                    Player's Choice
+                    <div class="choice-img" id="player-choice">
+                    </div>
+                </div>
+            </div>
+            <div id="bttn-container">
+                <button class="bttn" id="rock">
+                    <img class="img-rock" src="images/hand-rock.jpg" alt="">
+                </button>
+                <button class="bttn" id="paper">
+                    <img class="img-paper" src="images/hand-paper.jpg" alt="">
+                </button>
+                <button class="bttn" id="scissor">
+                    <img class="img-scissor" src="images/hand-scissor.jpg" alt="">
+                </button>
+            </div>
+        </div>
+        <div id="finalResult-container">
+            <span id="final-result"></span>
+            <button id="play-again">
+                Play Again
+            </button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

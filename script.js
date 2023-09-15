@@ -13,11 +13,11 @@ function getComputerChoice(){
 function playAudio(audio){
     audio.currentTime = 0;
     audio.play();
-    const playAgainBttn = document.querySelector("#play-again");
-    playAgainBttn.addEventListener('click',()=>{
-        audio.pause();
-        audio.currentTime = 0;
-    });
+    // const playAgainBttn = document.querySelector("#play-again");
+    // playAgainBttn.addEventListener('click',()=>{
+    //     audio.pause();
+    //     audio.currentTime = 0;
+    // });
 }
 
 
@@ -145,6 +145,8 @@ bttns.forEach((bttn)=>{
 
 const playAgainBttn = document.querySelector("#play-again");
 playAgainBttn.addEventListener("click",function(){
+    const audio = document.querySelector("#bttn-click");
+    playAudio(audio);
     document.querySelector("#finalResult-container").style.visibility = "hidden";
     document.querySelector("#player-score").textContent = "0";
     document.querySelector("#computer-score").textContent = "0";

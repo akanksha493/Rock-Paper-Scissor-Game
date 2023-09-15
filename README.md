@@ -19,5 +19,6 @@ Screenshot of website:
 ### Useful Resources
 1. For sound effects: [mixkit.co](https://mixkit.co/free-sound-effects/win/), [pixelbay](https://pixabay.com/sound-effects/search/buzzer/).
 2. For font : [google fonts](https://fonts.google.com/).
-3. Other resources :  stack-overflow, w3school, 
-[article on fluid typography](https://web.dev/min-max-clamp/).
+4. [article on fluid typography](https://web.dev/min-max-clamp/).
+5. [JavaScript Confetti library](https://www.npmjs.com/package/js-confetti)
+6. Other resources :  stack-overflow, w3school,mdnwebdocs. 
